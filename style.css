@@ -1,0 +1,176 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #fff;
+} 
+@font-face {
+    font-family: b;
+    src:url(./Montserrat-Italic-VariableFont_wght.ttf);
+}
+html,body{
+    /* background: url(./img.jpg)  ; */
+    background: url(https://media.istockphoto.com/id/184103864/photo/clouds-on-sky.webp?b=1&s=170667a&w=0&k=20&c=uCahXbJFxh5m_cKjgUlsO-LdylkKMoRmzSLCJQJSJFQ=)  center center/cover;
+    width: 100%;
+    height: 100%;
+}
+#main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+#page1{
+     
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    line-height: 4em;
+    
+}
+#upResult{
+    width: 56vw;
+    height: 11vh;
+    font-size: 2em;
+    font-family: b;
+    font-weight: 600;
+    text-align: center;
+    /* background-color: #999; */
+}
+#result{
+    width: 56vw;
+    height: 20vh;
+    font-size: 5em;
+    font-family: serif;
+    font-weight: 500;
+    /* background-color: #999; */
+    text-align: center;
+    line-height: 84px;
+}
+#result .desc {
+     /* width: 5px; */
+    font-size: 20px;
+    font-weight: 600;
+    font-family: sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 28px;
+}
+#downResult{
+    color: #000;
+    font-size: 20px;
+}
+#icon{
+    backdrop-filter: blur(.5px);
+    
+    background-color: #0000001c;
+    border-radius: 20px;
+}
+.style{
+    background-color: #999;
+    font-size: 20px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    border-radius: 20px;
+    width: 42vw;
+    height: 26vh;
+    /* border: 1px solid red; */
+    /* background-color: transparent ; */
+    backdrop-filter: blur(8px);
+    background-color: #0000003b;
+}
+
+#page3{
+    gap: 12px;
+    width: 100%;
+    height: 100%;
+    /* border: 2px solid black; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+
+
+#page2{
+    background-color:gray;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 20px 0px 20px;
+    position: relative;
+}
+label{
+    display: flex;
+    /* margin: 20px 125px 20px 125px; */
+    align-items: center;
+    justify-content: center;
+    font-family: sans-serif;
+    font-size: 25px;
+    font-weight: 600;
+    color: #fff;
+}
+.icon1{
+    position: fixed;
+    top: 20px;
+    font-size: 1.9em;
+    font-weight: 500;
+    color: #fff;
+    z-index: 99;
+}
+.cityName{
+    width: 100%;
+    outline: 0;
+    border: 2px solid #999;
+    border-radius: 50px;
+    padding: .6em;
+    padding-left: 50px;
+    margin: 15px 0px;
+    background-color: #999;
+}  
+.cityName::placeholder{
+    color: #ffffffab;
+    /* padding: 0px; */
+    font-family: sans-serif;
+    font-size: 1.3em;
+}  
+.icon{
+    position: absolute;
+    top: 72px;
+    left: 41px;
+    color: #ffffffab;
+    font-size: 1.6em;
+}
+.cityName:focus{
+    color: #fff;
+    border-color: #fff;
+}
+.cityName:focus .icon{
+    color: #fff;
+    display: none;
+}
+.btn{
+    border-radius: 50px;
+    width: 90px;
+    padding: 10px;
+    margin: 2px 2px 2px 0px;
+    color: #fff;
+    background-color: #999;
+    border: 1px solid #999;
+    box-shadow: 1px 1px 4px #000;
+}
+p{
+    color: #ffffffab;
+    margin: 20px 0px 20px 0px;
+    letter-spacing: 2px;
+}

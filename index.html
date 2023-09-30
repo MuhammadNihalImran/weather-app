@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Current weather app</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.14.0/moment.min.js" integrity="sha512-ZfaugI0MqX8/OvAHctqA1QtESiybFYhqSDomqlD1d9q52Ytt3NDqTEwuLOxY60DPEiV0/MVUSVsGmWe2WkKm9A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- <script  src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js" ></script> -->
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- <h1>current weather app</h1> -->
+    <div id="main"></div> 
+    
+    
+<div id="page2">
+  
+    <form onsubmit="getWeather(); return false">
+        <div class="icon1"><i class="ri-close-line"></i></div>
+   
+    <label for="cityName">Add city</label>
+            <input required type="text" name="cityName" id="cityName" class="cityName" placeholder="Search">
+
+        <div class="icon"><i  class="ri-search-line"></i></div>
+        
+    <div>
+          <P>Top cities</P>
+           <button class="btn">Current</button>
+           <button class="btn">Islamabad</button>
+           <button class="btn">Karachi</button>
+           <button class="btn">Lahore</button>
+           <button class="btn">Rawalpindi</button>
+           <button class="btn">Multan</button>
+           <button class="btn">Peshawar</button>
+    </div> 
+    <div>
+           <P>Top cities - world</P>
+           <button class="btn">New York</button>
+           <button class="btn">Paris</button>
+           <button class="btn">London</button>
+           <button class="btn">Tokyo</button>
+           <button class="btn">Rome</button>
+           <button class="btn">Dubai</button>
+           <button class="btn">Moscow</button>
+           <button class="btn">Sydeny</button>
+           <button class="btn">Singapore</button>
+           <button class="btn">Beijing</button>
+           <button class="btn">Athens</button>
+    </div> 
+        </form>
+</div>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<!-- <script src="https://unpkg.com/axios/dist/axios.min.js"></script> -->
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script type="module" src="script.js"></script>
+
+</body>
+</html>
